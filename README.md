@@ -1,2 +1,1 @@
 Teste do pipeline automatizado 
-'-'
