@@ -22,10 +22,11 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
+
       - name: Compilar o Robô
         run: |
           mkdir -p bin
-          javac -cp "libs/robocode.jar" -d bin src/PrimeiroRobo.java
+          javac -cp "libs/robocode.jar" -d bin src/PrimeiroRobo.java || exit 1
 
 
       - name: Análise de Padronização - Checkstyle
@@ -43,4 +44,3 @@ jobs:
 
       - name: Finalização
         run: echo "✅ Pipeline concluído com sucesso! Código analisado e compilado sem erros."
-
