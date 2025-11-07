@@ -1,1 +1,1 @@
-Teste do pipeline automatizado 
+Teste do pipeline automatizado que criamos
